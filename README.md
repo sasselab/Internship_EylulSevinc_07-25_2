@@ -34,6 +34,8 @@ Before training, regions overlapping the ENCODE Drosophila blacklist were filter
 Two separate gReLU convolutional multilayer perceptron (Conv-MLP) models were trained — one using ATAC-seq signals to predict chromatin accessibility, and the other using ChIP-nexus signals to model transcription factor binding profiles.
 
 ### Model Implementation
+The ATAC model was trained using the [train_atac_model.py](scripts/model_training/train_atac_model.py) script located in the [model_training](scripts/model_training/) folder under [scripts/](scripts/).
+
 ### Model Interpretation with Integrated Gradients
 
 
@@ -51,4 +53,3 @@ Two separate gReLU convolutional multilayer perceptron (Conv-MLP) models were tr
 ### 5. Running the pipeline
 
 ## References
-The ATAC model was trained using the [train_atac_model.py](scripts/model_training/train_atac_model.py) script located in the [model_training](scripts/model_training/) folder under [scripts/](scripts/).
