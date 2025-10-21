@@ -51,3 +51,4 @@ Two separate gReLU convolutional multilayer perceptron (Conv-MLP) models were tr
 ### 5. Running the pipeline
 
 ## References
+The ATAC model was trained using the [train_atac_model.py](scripts/model_training/train_atac_model.py) script located in the [model_training](scripts/model_training/) folder under [scripts/](scripts/).
