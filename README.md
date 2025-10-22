@@ -27,7 +27,8 @@ Applications of theese models to early *Drosophila* embryos have uncovered canon
 Building on this framework, this project aimed to identify sequence motfis that drive chromatin accessibilty and TF binding in early *Drosophila* emryos. Using publicly available ATAC-seq and ChIP-nexus data from multiple developmental stages and TF-mutant backgrounds [(Brennan et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1534580723003477?via%3Dihub); [(Secchia et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1534580722000557), a convolutional multilayer perceptron (Conv-MLP) model implemented in gReLU was trained on 200-bp genomic windows to predict accessibility and binding signals. Comparing predictions between wild-type and mutant conditions at different time-points enabled the detection of regions and motifs driving changes in chromatin accessibility during early *Drosophila* embryonic development. 
 
 ![Figure 1: The continuum of Drosophila embryonic development at single cell resolution](figures/drosophila_development.png)
-Figure 1: The continuum of Drosophila embryonic development at single cell resolution
+
+**Figure 1:** The continuum of Drosophila embryonic development at single cell resolution
 
 ## Methodology
 
@@ -62,7 +63,7 @@ Performance patterns were consistent across genotypes, with slightly higher corr
 Across all four backgrounds, performance remained stable across time points (1–3 h after egg laying), confirming that the model generalizes well to dynamic developmental contexts.
 
 ![Model performance comparison](figures/model_performance.png)
-Figure 2: Model Performance Relative to Replicate Correlation across Cell Types and Developmental Stages
+**Figure 2:** Model Performance Relative to Replicate Correlation across Cell Types and Developmental Stages
 
 
 ### Quantile Normalization and Statistical Analysis
