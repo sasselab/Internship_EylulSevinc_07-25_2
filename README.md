@@ -6,14 +6,14 @@ This repository contains documentation and code for my internship research title
 ## Contents
 This repository has the following folders:
 
-"""
+'''
 scripts/
-├── processing_data/      # Data preprocessing, peak merging, and window generation scripts
-├── model_training/       # Scripts for model training, and evaluation
-├── statistical/          # Statistical analyses including q-normalization and t-tests 
-└── generating_figures/   # Plotting and visualization scripts for model performance and results
-└───predictions.py
-"""
+── processing_data/      # Data preprocessing, peak merging, and window generation scripts
+── model_training/       # Scripts for model training, and evaluation
+── statistical/          # Statistical analyses including q-normalization and t-tests 
+── generating_figures/   # Plotting and visualization scripts for model performance and results
+── predictions.py
+'''
    
 ## Introduction
 During early *Drosophila melanogaster* embryogenesis, large-scale chromatin remodelling establishes the first gene-regulatory programs that pattern the embry along its anterior-posterior and dorsoventral axes. Chromatin accessibility, the extent which DNA is open for transcription factor (TF) binding, is a critical aspect of this regulatory code. Understanding how specific DNA motifs enable certain TFs to bind and regulate these regions is key to decoding the cis-regulatory logic of development.
