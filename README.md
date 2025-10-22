@@ -20,7 +20,7 @@ During early *Drosophila melanogaster* embryogenesis, large-scale chromatin remo
 
 Chromatin accessibility determines which enhancers are active: open regions permit TF binding, while closed regions remain repressed. During zygotic genome activation, the pioneer TF Zelda establishes a baseline of open chromatin, and patterning TFs such as Dorsal, Twist, Bicoid, and Caudal refine enhancer activity and regulate Hox genes that define embryonic segments [(Brennan et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1534580723003477?via%3Dihub).
 
-Recent studies have shown that DNA sequence features alone can predict chromatin accessibility and TF binding when modeled with deep learning. Methods such as BPNet and ChromBPNet learn how combinations and spatial arrangements of sequence motifs encode regulatory activity [(de Almedia et al., 2020](https://www.nature.com/articles/s41586-023-06905-9); [Secchia et al., 2021)](https://www.sciencedirect.com/science/article/pii/S1534580722000557). Attribution approaches including DeepLIFT and Integrated Gradients then identify which motifs most strongly influence model predictions, revealing the underlying cis-regulatory code [(Cardamone et al., 2017](https://www.nature.com/articles/s41467-025-57719-4); [Gupta et al., 2022)](https://www.biorxiv.org/content/10.1101/2024.02.06.577903v1.full).
+Recent studies have shown that DNA sequence features alone can predict chromatin accessibility and TF binding when modeled with deep learning. Methods such as BPNet and ChromBPNet learn how combinations and spatial arrangements of sequence motifs encode regulatory activity [(de Almedia et al., 2020](https://www.nature.com/articles/s41586-023-06905-9); [Secchia et al., 2021)](https://www.sciencedirect.com/science/article/pii/S1534580722000557). Attribution approaches including DeepLIFT and Integrated Gradients then identify which motifs most strongly influence model predictions, revealing the underlying cis-regulatory code [(Cardamone et al., 2017](https://www.nature.com/articles/s41467-025-57719-4); [Wang et al., 2022)](https://www.biorxiv.org/content/10.1101/2024.02.06.577903v1.full).
 
 Applications of theese models to early *Drosophila* embryos have uncovered canonical motifs for TFs such as Zelda, Dorsal, Twist, Bicoid, and Caudal, as well as motif co-occurence patterns that predict enhancer activity [(Secchia et al. 2023](https://www.sciencedirect.com/science/article/pii/S1534580722000557); [Calderon et al., 2023)](https://www.science.org/doi/10.1126/science.abn5800).
 
@@ -82,3 +82,14 @@ While a full motif discovery analysis could not be completed within the internsh
 #### 5. Running the pipeline
 
 ## References
+[1] Brennan, K. J., Weilert, M., Krueger, S., Pampari, A., Liu, H., Yang, A. W., Morrison, J. A., Hughes, T. R., Rushlow, C. A., Kundaje, A., & Zeitlinger, J. (2023). Chromatin accessibility in the Drosophila embryo is determined by transcription factor pioneering and enhancer activation. Developmental Cell, 60. https://doi.org/10.1016/j.devcel.2023.XX.XXX
+
+[2] de Almeida, B. P., Schaub, C., Pagani, M., Secchia, S., Furlong, E. E. M., & Stark, A. (2023). Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo. Nature, 626, 207-211. https://doi.org/10.1038/s41586-023-06905-9
+
+[3] Secchia, S., Forneris, M., Heinen, T., Stegle, O., & Furlong, E. E. M. (2022). Simultaneous cellular and molecular phenotyping of embryonic mutants using single-cell regulatory trajectories. Developmental Cell, 57(4), 496-511.e1-e8. https://doi.org/10.1016/j.devcel.2022.01.016
+
+[4] Cardamone, F., Piva, A., Löser, E., Eichenberger, B., Romero-Mulero, M. C., Zenk, F., Shields, E. J., Cabezas-Wallscheid, N., Bonasio, R., Tiana, G., Zhan, Y., & Iovino, N. (2025, March 27). Chromatin landscape at cis-regulatory elements orchestrates cell fate decisions in early embryogenesis. Nature News. https://www.nature.com/articles/s41467-025-57719-4 
+
+[5] Wang, M., Hu, Q., Tu, Z., Kong, L., Yao, J., Xiang, R., Chen, Z., Zhao, Y., Zhou, Y., Yu, T., Wang, Y., Jia, Z., Ouyang, K., Wang, X., Bai, Y., Lian, M., Yang, Z., Yang, T., Chen, J., Huang, Y., Yin, N., Mo, W., Liang, W., Liu, C., Lin, X., Liu, C., Gu, Y., Hu, Y. (2024). A single-cell 3D spatiotemporal multi-omics atlas from Drosophila embryogenesis to metamorphosis. bioRxiv. https://doi.org/10.1101/2024.02.06.577903
+
+[6] Calderon, D., Blecher-Gonen, R., Huang, X., Secchia, S., Kentro, J., Daza, R. M., Martin, B., Dulja, A., Schaub, C., Trapnell, C., Larschan, E., O’Connor-Giles, K. M., Furlong, E. E. M., & Shendure, J. (2022). The continuum of Drosophila embryonic development at single-cell resolution. Science, 377(6606), eabn5800. https://doi.org/10.1126/science.abn5800
