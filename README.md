@@ -58,6 +58,9 @@ The ConvMLP models therefore account for a substantial fraction of the explainab
 Performance patterns were consistent across genotypes, with slightly higher correlations observed for wild-type (orer) and Zelda-depleted (zldRNAi) embryos than for gd7 and cic6 mutants.
 Across all four backgrounds, performance remained stable across time points (1–3 h after egg laying), confirming that the model generalizes well to dynamic developmental contexts.
 
+![Model performance comparison](figures/model_performance.png)
+
+
 ### Quantile Normalization and Statistical Analysis
 Following model training, predicted and measured signal matrices were quantile-normalized to ensure comparability across replicates and experimental conditions.
 To identify genomic regions showing significant changes in chromatin accessibility or transcription factor binding, Benjamini–Hochberg–corrected t-tests were performed between wild-type (orer) and each mutant condition, as well as across developmental time points.
@@ -79,3 +82,15 @@ While a full motif discovery analysis could not be completed within the internsh
 #### 5. Running the pipeline
 
 ## References
+
+[1] Brennan, K. J., Weilert, M., Krueger, S., Pampari, A., Liu, H., Yang, A. W., Morrison, J. A., Hughes, T. R., Rushlow, C. A., Kundaje, A., & Zeitlinger, J. (2023). Chromatin accessibility in the Drosophila embryo is determined by transcription factor pioneering and enhancer activation. Developmental Cell, 60. https://doi.org/10.1016/j.devcel.2023.XX.XXX
+
+[2] Cardamone, F., Piva, A., Löser, E., Eichenberger, B., Romero-Mulero, M. C., Zenk, F., Shields, E. J., Cabezas-Wallscheid, N., Bonasio, R., Tiana, G., Zhan, Y., & Iovino, N. (2025, March 27). Chromatin landscape at cis-regulatory elements orchestrates cell fate decisions in early embryogenesis. Nature News. https://www.nature.com/articles/s41467-025-57719-4 
+
+[3] Calderon, D., Blecher-Gonen, R., Huang, X., Secchia, S., Kentro, J., Daza, R. M., Martin, B., Dulja, A., Schaub, C., Trapnell, C., Larschan, E., O’Connor-Giles, K. M., Furlong, E. E. M., & Shendure, J. (2022). The continuum of Drosophila embryonic development at single-cell resolution. Science, 377(6606), eabn5800. https://doi.org/10.1126/science.abn5800
+
+[4] de Almeida, B. P., Schaub, C., Pagani, M., Secchia, S., Furlong, E. E. M., & Stark, A. (2023). Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo. Nature, 626, 207-211. https://doi.org/10.1038/s41586-023-06905-9
+
+[5] Secchia, S., Forneris, M., Heinen, T., Stegle, O., & Furlong, E. E. M. (2022). Simultaneous cellular and molecular phenotyping of embryonic mutants using single-cell regulatory trajectories. Developmental Cell, 57(4), 496-511.e1-e8. https://doi.org/10.1016/j.devcel.2022.01.016
+
+[6] Wang, M., Hu, Q., Tu, Z., Kong, L., Yao, J., Xiang, R., Chen, Z., Zhao, Y., Zhou, Y., Yu, T., Wang, Y., Jia, Z., Ouyang, K., Wang, X., Bai, Y., Lian, M., Yang, Z., Yang, T., Chen, J., Huang, Y., Yin, N., Mo, W., Liang, W., Liu, C., Lin, X., Liu, C., Gu, Y., Hu, Y. (2024). A single-cell 3D spatiotemporal multi-omics atlas from Drosophila embryogenesis to metamorphosis. bioRxiv. https://doi.org/10.1101/2024.02.06.577903
