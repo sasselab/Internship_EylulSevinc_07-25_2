@@ -1,7 +1,7 @@
 # Understanding Cis-Regulatory code of chromatin accessibilty in the early *Drosophila melanogaster* development using Deep Learning
 
 ## Overview
-This repository contains documentation and code for my internship research titled "Understanding Cis-Regulatory code of chromatin accessibilty in the early *Drosophila melanogaster* development using Deep Learning"
+This repository contains documentation and code for my internship research titled "Understanding Cis-Regulatory code of chromatin accessibilty in the early *Drosophila melanogaster* development using Deep Learning".
 
 ## Contents
 This repository has the following folders:
@@ -25,6 +25,9 @@ Recent studies have shown that DNA sequence features alone can predict chromatin
 Applications of theese models to early *Drosophila* embryos have uncovered canonical motifs for TFs such as Zelda, Dorsal, Twist, Bicoid, and Caudal, as well as motif co-occurence patterns that predict enhancer activity [(Secchia et al. 2023](https://www.sciencedirect.com/science/article/pii/S1534580722000557); [Calderon et al., 2023)](https://www.science.org/doi/10.1126/science.abn5800).
 
 Building on this framework, this project aimed to identify sequence motfis that drive chromatin accessibilty and TF binding in early *Drosophila* emryos. Using publicly available ATAC-seq and ChIP-nexus data from multiple developmental stages and TF-mutant backgrounds [(Brennan et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1534580723003477?via%3Dihub); [(Secchia et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1534580722000557), a convolutional multilayer perceptron (Conv-MLP) model implemented in gReLU was trained on 200-bp genomic windows to predict accessibility and binding signals. Comparing predictions between wild-type and mutant conditions at different time-points enabled the detection of regions and motifs driving changes in chromatin accessibility during early *Drosophila* embryonic development. 
+
+![Figure 1: The continuum of Drosophila embryonic development at single cell resolution](figures/drosophila_development.png)
+Figure 1: The continuum of Drosophila embryonic development at single cell resolution
 
 ## Methodology
 
@@ -52,13 +55,14 @@ In parallel, an attempt was made to adapt the Enformer model, a transformer-base
 
 ### Model Performance
 The trained ConvMLP models achieved robust predictive performance across multiple Drosophila developmental stages and genetic backgrounds.
-Across all conditions, Pearson correlations (R) between predicted and measured ATAC-seq signals ranged from ≈0.67 to 0.76, while correlations between biological replicates themselves ranged from ≈0.88 to 0.98 (Figure 1).
+Across all conditions, Pearson correlations (R) between predicted and measured ATAC-seq signals ranged from ≈0.67 to 0.76, while correlations between biological replicates themselves ranged from ≈0.88 to 0.98 (Figure 2).
 This comparison establishes an empirical upper limit for achievable model accuracy: since replicate measurements are not perfectly correlated, any model can only capture the reproducible portion of the biological signal.
 The ConvMLP models therefore account for a substantial fraction of the explainable variance—typically 70–80% of the correlation observed between replicates—indicating strong sequence-to-signal learning despite experimental noise.
 Performance patterns were consistent across genotypes, with slightly higher correlations observed for wild-type (orer) and Zelda-depleted (zldRNAi) embryos than for gd7 and cic6 mutants.
 Across all four backgrounds, performance remained stable across time points (1–3 h after egg laying), confirming that the model generalizes well to dynamic developmental contexts.
 
 ![Model performance comparison](figures/model_performance.png)
+Figure 2: Model Performance Relative to Replicate Correlation across Cell Types and Developmental Stages
 
 
 ### Quantile Normalization and Statistical Analysis
@@ -73,13 +77,6 @@ This approach prioritized regions that showed both altered chromatin accessibili
 To identify which sequence motifs most strongly influenced model predictions and identifiy key regulatory motifs for *Drosophila melanogaster* development, Integrated Gradients (IG) attribution analysis was applied using the [Captum AI library](https://captum.ai/docs/extension/integrated_gradients). For each 200 bp genomic window, IG computed a base-pair–level contribution score reflecting how changes in nucleotide identity would alter the model’s predicted accessibility or TF-binding signal.
 These attribution maps highlight the sequence positions that most strongly influence the model’s predictions, enabling the visualization of transcription factor motifs that drive accessibility or binding.
 While a full motif discovery analysis could not be completed within the internship period, these IG-based attributions form the foundation for downstream motif clustering and comparison with known Zelda, Dorsal, Twist, and Caudal binding motifs described in prior studies [(Brennan et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1534580723003477?via%3Dihub).
-
-## Quick Start
-#### 1. Clone the repository
-#### 2. Navigate to the project directory:
-#### 3. Create a virtual environment: 
-#### 4. Install required packages
-#### 5. Running the pipeline
 
 ## References
 [1] Brennan, K. J., Weilert, M., Krueger, S., Pampari, A., Liu, H., Yang, A. W., Morrison, J. A., Hughes, T. R., Rushlow, C. A., Kundaje, A., & Zeitlinger, J. (2023). Chromatin accessibility in the Drosophila embryo is determined by transcription factor pioneering and enhancer activation. Developmental Cell, 60. https://doi.org/10.1016/j.devcel.2023.XX.XXX
