@@ -1,4 +1,4 @@
-# Internship_EylulSevinc_07-25
+# Understanding Cis-Regulatory code of chromatin accessibilty in the early *Drosophila melanogaster* development using Deep Learning
 
 ## Overview
 This repository contains documentation and code for my internship research titled "Understanding Cis-Regulatory code of chromatin accessibilty in the early *Drosophila melanogaster* development using Deep Learning"
@@ -45,7 +45,7 @@ To improve learning capacity, a Convolutional Multilayer Perceptron (ConvMLP) mo
 
 The training objective was to minimize the mean squared error (MSE) between predicted and measured accessibility or binding signals. Early stopping with patience was applied to prevent overfitting. Model performance was assessed using Pearson correlation (R) between predicted and observed signal values on held-out test chromosomes.
 
-In parallel, an attempt was made to adapt the Enformer model — a transformer-based architecture pre-trained on human and mouse genomes — to Drosophila data. The plan involved fine-tuning Enformer using the same ~500k genomic intervals employed for ConvMLP training. However, due to time constraints this retraining was not completed within the internship period. Nevertheless, comparing convolutional and transformer-based architectures would help highlight the complementary strengths of convolutional and transformer-based approaches for learning genome-to-signal mappings.
+In parallel, an attempt was made to adapt the Enformer model, a transformer-based architecture pre-trained on human and mouse genomes, to Drosophila data. The plan involved fine-tuning Enformer using the same ~500k genomic intervals employed for ConvMLP training. However, due to time constraints this retraining was not completed within the internship period. Nevertheless, comparing convolutional and transformer-based architectures would help highlight the complementary strengths of convolutional and transformer-based approaches for learning genome-to-signal mappings.
 
 
 ## Results and Discussion
