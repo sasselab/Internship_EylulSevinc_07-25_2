@@ -28,7 +28,7 @@ Building on this framework, this project aimed to identify sequence motfis that 
 
 ![Figure 1: The continuum of Drosophila embryonic development at single cell resolution](figures/drosophila_development.png) 
 
-**Figure 1:** The continuum of Drosophila embryonic development at single cell resolution [(Calderon et al., 2022)](Calderon et al. (Calderon, D., Blecher-Gonen, R., Huang, X., Secchia, S., Kentro, J., Daza, R. M., Martin, B., Dulja, A., Schaub, C., Trapnell, C., Larschan, E., O’Connor-Giles, K., Furlong, E. E. M., & Shendure, J. (2022). The continuum of Drosophila embryonic development at single‐cell resolution. Science, 377, 620. https://doi.org/10.1126/science.abn5800))
+**Figure 1:** The continuum of Drosophila embryonic development at single cell resolution [(Calderon et al., 2022)](https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/)
 
 ## Methodology
 
