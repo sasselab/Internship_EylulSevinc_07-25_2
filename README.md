@@ -1,4 +1,4 @@
-# Understanding Cis-Regulatory code of chromatin accessibilty in the early *Drosophila melanogaster* development using Deep Learning
+# Lab Internship Research
 
 ## Overview
 This repository contains documentation and code for my internship research titled "Understanding Cis-Regulatory code of chromatin accessibilty in the early *Drosophila melanogaster* development using Deep Learning".
@@ -28,7 +28,7 @@ Building on this framework, this project aimed to identify sequence motfis that 
 
 ![Figure 1: The continuum of Drosophila embryonic development at single cell resolution](figures/drosophila_development.png) 
 
-**Figure 1:** The continuum of Drosophila embryonic development at single cell resolution [(Calderon et al., 2022)](https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/)
+**Figure 1:** The continuum of Drosophila embryonic development at single cell resolution [(Calderon et al., 2022)](https://shendure-web.gs.washington.edu/content/members/DEAP_website/public/).
 
 ## Methodology
 
